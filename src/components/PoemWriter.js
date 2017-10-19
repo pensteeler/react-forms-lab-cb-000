@@ -78,7 +78,7 @@ class PoemWriter extends React.Component {
           style={{color: 'red'}}
         >
           This poem is not written in the right structure!
-        </div> }
+        </div> : null }
       </div>
     );
   }
