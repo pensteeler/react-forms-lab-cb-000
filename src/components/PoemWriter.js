@@ -16,10 +16,12 @@ class PoemWriter extends React.Component {
 
       let poemText = event.target.value;
       if( poemText ) {
+        console.log( "Setting poem text:" + poemText);
         this.setState({
           poemText: poemText,
           isValid: this.checkIfValidPoem( poemText ),
         });
+        console.log( "isValid:" + isValid);
       }
 
   }
