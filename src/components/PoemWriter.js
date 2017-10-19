@@ -41,11 +41,9 @@ class PoemWriter extends React.Component {
 
       // Check first line
       if( this.checkWordCounts( poemLines ) ) {
-        console.log("Word Counts OK");
         return true;
       }
       else {
-        console.log("Word Counts NOT OK");
         return false;
       }
 
