@@ -51,7 +51,6 @@ class PoemWriter extends React.Component {
       return false;
     }
 
-    return true;
   }
 
   checkLineCount( poemText ) {
