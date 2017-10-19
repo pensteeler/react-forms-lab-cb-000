@@ -15,7 +15,7 @@ class PoemWriter extends React.Component {
     };
   }
 
-  handleInputChange {
+  handleInputChange( event ) {
 
       this.setState({
         value: event.target.value,
