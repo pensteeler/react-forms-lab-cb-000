@@ -1,10 +1,5 @@
 import React from 'react';
 
-// Poem has three lines
-// first line has five words
-// Second line has three words
-// Third line has five words
-
 class PoemWriter extends React.Component {
   constructor() {
     super();
@@ -29,7 +24,30 @@ class PoemWriter extends React.Component {
   }
 
   checkIfValidPoem( poemText ) {
-      return true;
+    // Poem has three lines
+    // first line has five words
+    // Second line has three words
+    // Third line has five words
+
+    if( checkLineCount(poemText) == 3 ) {
+      
+      // Check first line
+//      if( checkWordCount == 5 )
+      
+//    }
+    else {
+      return false;
+    }
+    
+    return true;
+  }
+
+  checkLineCount( poemText ) {
+    return poemText.split(/\r\n|\r|\n/).length;
+  }
+
+  checkWordCount( poemLine ) {
+    
   }
 
   render() {
