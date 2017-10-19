@@ -42,7 +42,10 @@ class PoemWriter extends React.Component {
       console.log( "three lines");
 
       // Check first line
-//      if( checkWordCount == 5 )
+      if( this.checkWordCounts( poemLines) ) {
+        return true;
+      }
+      
 
     }
     else {
@@ -53,8 +56,12 @@ class PoemWriter extends React.Component {
     return true;
   }
 
-  checkWordCount( poemLine ) {
-
+  checkWordCounts( poemLines ) {
+    if( poemLines[0] != 5 || poemLines[1] != 3 || poemLines[2] != 5  )
+    {
+          return false;
+    }
+    return true;
   }
 
   render() {
