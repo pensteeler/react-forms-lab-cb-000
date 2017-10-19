@@ -20,7 +20,7 @@ class PoemWriter extends React.Component {
   handleInputChange( event ) {
 
       let poemText = event.target.value;
-      
+
       this.setState({
         poemText: event.target.value,
         isValid: this.checkIfValidPoem( poemText )
