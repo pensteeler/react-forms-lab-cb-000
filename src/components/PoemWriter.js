@@ -34,7 +34,7 @@ class PoemWriter extends React.Component {
     // Third line has five words
     const poemLines = poemText.split(/\r\n|\r|\n/);
 
-    console.log( "Line1: " + poemLines[0]);
+    console.log( "Line1: " + poemLines[0] + "Length: " + poemLines[0].split(" ").length);
     console.log( "Line2: " + poemLines[1]);
     console.log( "Line3: " + poemLines[2]);
 
