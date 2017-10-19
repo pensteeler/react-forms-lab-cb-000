@@ -14,7 +14,7 @@ class PoemWriter extends React.Component {
       isValid: false
     };
 
-    this.handleInputChange.bind(this);
+    this.handleInputChange = this.handleInputChange.bind(this);
   }
 
   handleInputChange( event ) {
