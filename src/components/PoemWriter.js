@@ -15,11 +15,12 @@ class PoemWriter extends React.Component {
   handleInputChange( event ) {
 
       let poemText = event.target.value;
-
-      this.setState({
-        poemText: event.target.value,
-        isValid: this.checkIfValidPoem( poemText )
-      });
+      if( poemText ) {
+        this.setState({
+          poemText: poemText,
+          isValid: this.checkIfValidPoem( poemText )
+        });
+      }
 
   }
 
@@ -52,6 +53,7 @@ class PoemWriter extends React.Component {
     }
 
   }
+
 
   checkLineCount( poemText ) {
     const lineCount = poemText.split(/\r\n|\r|\n/).length;
