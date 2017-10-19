@@ -19,6 +19,8 @@ class PoemWriter extends React.Component {
 
   handleInputChange( event ) {
 
+      let poemText = event.target.value;
+      
       this.setState({
         poemText: event.target.value,
         isValid: this.checkIfValidPoem( poemText )
@@ -36,7 +38,7 @@ class PoemWriter extends React.Component {
         <textarea
           rows="3"
           cols="60"
-          poemText={this.state.poemText}
+          value={this.state.poemText}
           onChange={this.handleInputChange}
         />
         <div
