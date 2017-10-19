@@ -54,7 +54,9 @@ class PoemWriter extends React.Component {
   }
 
   checkLineCount( poemText ) {
-    return poemText.split(/\r\n|\r|\n/).length;
+    const lineCount = poemText.split(/\r\n|\r|\n/).length;
+    console.log( "Line COunt:" + lineCount );
+    return lineCount;
   }
 
   checkWordCounts( poemLines ) {
