@@ -57,7 +57,7 @@ class PoemWriter extends React.Component {
   }
 
   checkWordCounts( poemLines ) {
-    if( poemLines[0].split(" ").length != 5 || poemLines[1].split(" ").length != 3 || poemLines[2].split(" ").length != 5  )
+    if( poemLines[0].trim().split(" ").length != 5 || poemLines[1].trim().split(" ").length != 3 || poemLines[2].trim().split(" ").length != 5  )
     {
           return false;
     }
