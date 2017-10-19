@@ -38,7 +38,6 @@ class PoemWriter extends React.Component {
     //console.log( "Line3: " + poemLines[2] + "Length: " + poemLines[2].trim().split(" ").length);
 
     if( this.checkLineCount( poemText ) == 3 ) {
-      console.log( "three lines");
 
       // Check first line
       if( this.checkWordCounts( poemLines ) ) {
@@ -52,7 +51,6 @@ class PoemWriter extends React.Component {
 
     }
     else {
-      console.log( "NOT three lines");
       return false;
     }
 
