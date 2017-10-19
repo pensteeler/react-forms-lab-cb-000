@@ -23,13 +23,17 @@ class PoemWriter extends React.Component {
 
   }
 
+  checkLineCount( poemText ) {
+    return poemText.split(/\r\n|\r|\n/).length;
+  }
+
   checkIfValidPoem( poemText ) {
     // Poem has three lines
     // first line has five words
     // Second line has three words
     // Third line has five words
 
-    if( checkLineCount(poemText) == 3 ) {
+    if( checkLineCount( poemText ) == 3 ) {
 
       // Check first line
 //      if( checkWordCount == 5 )
@@ -40,10 +44,6 @@ class PoemWriter extends React.Component {
     }
 
     return true;
-  }
-
-  checkLineCount( poemText ) {
-    return poemText.split(/\r\n|\r|\n/).length;
   }
 
   checkWordCount( poemLine ) {
