@@ -1,5 +1,10 @@
 import React from 'react';
 
+// Poem has three lines
+// first line has five words
+// Second line has three words
+// Third line has five words
+
 class PoemWriter extends React.Component {
   constructor() {
     super();
@@ -26,3 +31,4 @@ class PoemWriter extends React.Component {
 }
 
 export default PoemWriter;
+
