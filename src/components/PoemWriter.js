@@ -21,13 +21,13 @@ class PoemWriter extends React.Component {
         value: event.target.value,
         isValid: this.checkIfValidPoem( poemText )
       });
-      
+
   }
 
   checkIfValidPoem( poemText ) {
       return true;
   }
-  
+
   render() {
     return (
       <div>
@@ -49,4 +49,3 @@ class PoemWriter extends React.Component {
 }
 
 export default PoemWriter;
-
