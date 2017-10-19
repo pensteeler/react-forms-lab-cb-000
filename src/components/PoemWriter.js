@@ -13,6 +13,8 @@ class PoemWriter extends React.Component {
       value: '',
       isValid: false
     };
+
+    this.handleInputChange.bind(this);
   }
 
   handleInputChange( event ) {
