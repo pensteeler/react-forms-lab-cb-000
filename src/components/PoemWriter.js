@@ -34,7 +34,7 @@ class PoemWriter extends React.Component {
     // Third line has five words
 
     if( this.checkLineCount( poemText ) == 3 ) {
-
+concole.log( "three lines");
       // Check first line
 //      if( checkWordCount == 5 )
 
