@@ -36,7 +36,7 @@ class PoemWriter extends React.Component {
 
     console.log( poemLines[0]);
     console.log( poemLines[1]);
-    
+
     if( this.checkLineCount( poemText ) == 3 ) {
       console.log( "three lines");
 
