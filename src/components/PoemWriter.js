@@ -16,12 +16,10 @@ class PoemWriter extends React.Component {
 
       let poemText = event.target.value;
       if( poemText ) {
-        console.log( "Setting poem text:" + poemText);
         this.setState({
           poemText: poemText,
           isValid: this.checkIfValidPoem( poemText ),
         });
-        console.log( "isValid:" + this.state.isValid);
       }
 
   }
@@ -33,7 +31,7 @@ class PoemWriter extends React.Component {
     // Third line has five words
     const poemLines = poemText.split(/\r\n|\r|\n/);
 
-    console.log( "Line1: " + poemLines[0] + "Length: " + poemLines[0].trim().split(" ").length);
+    //console.log( "Line1: " + poemLines[0] + "Length: " + poemLines[0].trim().split(" ").length);
     //console.log( "Line2: " + poemLines[1] + "Length: " + poemLines[1].trim().split(" ").length);
     //console.log( "Line3: " + poemLines[2] + "Length: " + poemLines[2].trim().split(" ").length);
 
