@@ -31,9 +31,9 @@ class PoemWriter extends React.Component {
     // Third line has five words
     const poemLines = poemText.split(/\r\n|\r|\n/);
 
-    console.log( "Line1: " + poemLines[0] + "Length: " + poemLines[0].trim().split(" ").length);
-    console.log( "Line2: " + poemLines[1] + "Length: " + poemLines[1].trim().split(" ").length);
-    console.log( "Line3: " + poemLines[2] + "Length: " + poemLines[2].trim().split(" ").length);
+    //console.log( "Line1: " + poemLines[0] + "Length: " + poemLines[0].trim().split(" ").length);
+    //console.log( "Line2: " + poemLines[1] + "Length: " + poemLines[1].trim().split(" ").length);
+    //console.log( "Line3: " + poemLines[2] + "Length: " + poemLines[2].trim().split(" ").length);
 
     if( this.checkLineCount( poemText ) == 3 ) {
       console.log( "three lines");
