@@ -82,7 +82,7 @@ class PoemWriter extends React.Component {
           value={this.state.poemText}
           onChange={this.handleInputChange}
         />
-        {!this.state.checkIfValidPoem ? <div
+        {!this.state.isValid ? <div
           id="poem-validation-error"
           style={{color: 'red'}}
         >
